@@ -6,7 +6,7 @@ statuses.forEach(function (status, index, object) {
   status = `${object.slice(1,2)}, ${object.slice(3, 4)}`;
   result.push(status);
 })
-
+//check retry.js for corrections
 console.log(result)
 
 // Assignment 2
@@ -20,7 +20,7 @@ let studentAndScores = [
 ]
 
 const studentName = studentAndScores.map(function callback(item) {
-  if (item.score <= 40) {
+  if (item.score >=0 && item.score <= 40) {
     item.score = 'D';
   } else if(item.score <= 60) {
     item.score = 'C';
